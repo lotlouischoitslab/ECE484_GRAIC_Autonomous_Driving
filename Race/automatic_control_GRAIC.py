@@ -63,7 +63,7 @@ except IndexError:
 import carla
 from carla import ColorConverter as cc
 
-from agent import Agent
+from RRT.agent import Agent
 
 
 # ==============================================================================
