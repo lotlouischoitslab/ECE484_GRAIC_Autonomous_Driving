@@ -7,11 +7,12 @@
 
 **2 Minute Presentation Video: [https://www.youtube.com/watch?v=PtBUiRwEzz0]**
 
-| Controller         | With Scenarios | Without Scenarios | Link |
-|--------------------|----------------|--------------------|------|
-| Basic Controller   | -              | 101.60             | Link |
-| RRT Controller     | -              | 102.20             | Link |
-| Vision Controller  | -              | -                  | Link |
+
+| Controller         | With Scenarios | Without Scenarios | Video With Scenarios | Video Without Scenarios |
+|--------------------|----------------|--------------------|------|--------------------|
+| Basic Controller   | -              | 101.60             |      |!(Link)[https://www.youtube.com/watch?v=v8KOwY_RivM] |
+| RRT Controller     | -              | 102.20             | Link |  |
+| Vision Controller  | -              | -                  | Link |   |
 
 
 
