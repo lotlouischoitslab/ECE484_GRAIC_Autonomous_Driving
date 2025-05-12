@@ -3,20 +3,15 @@
 ## Autonomous Alliance:
 - **Louis Sungwoo Cho**
 - **Zach Greening**
-- **Wenchang Qi** 
+- **Wenchang Qi**
 
-Basic Controller
-Scenarios -
-No Scenarios - 101.60
+**2 Minute Presentation Video: [https://www.youtube.com/watch?v=PtBUiRwEzz0]**
 
-RRT Controller
-Scenarios - 
-No Scenarios - 102.20 
+| Controller         | With Scenarios | Without Scenarios | Link |
+|--------------------|----------------|--------------------|------|
+| Basic Controller   | -              | 101.60             | Link |
+| RRT Controller     | -              | 102.20             | Link |
+| Vision Controller  | -              | -                  | Link |
 
-Vision Controller
-Scenarios -
-No Scenarios -
-
-2 Minute Presentation Video: [https://www.youtube.com/watch?v=PtBUiRwEzz0]
 
 
