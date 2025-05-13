@@ -1,7 +1,0 @@
-Time: 14.37, Collision Actor ID: 33, Collision Actor Type: vehicle.audi.a2
-Time: 52.45, Collision Actor ID: 0, Collision Actor Type: static.terrain
-Time: 51.78, Collision Actor ID: 0, Collision Actor Type: static.terrain
-Time: 14.0, Collision Actor ID: 33, Collision Actor Type: vehicle.audi.a2
-Time: 15.0, Collision Actor ID: 33, Collision Actor Type: vehicle.audi.a2
-Time: 14.4, Collision Actor ID: 33, Collision Actor Type: vehicle.audi.a2
-Time: 11.81, Collision Actor ID: 0, Collision Actor Type: static.terrain
