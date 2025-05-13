@@ -7,7 +7,7 @@
 
 **2 Minute Presentation Video: [https://www.youtube.com/watch?v=PtBUiRwEzz0]**
 
-The vision-based controller fails to cross the finish line with scenarios active, so we will not upload that video. The rest of the videos and times are shown below.
+The vision-based controller fails to cross the finish line with scenarios active, so we will not upload that video. The rest of the videos and times are shown below. All times and videos are on the Shanghai Circuit.
 
 
 | Controller                   | With Scenarios | Without Scenarios  |Collisions NO Obstacles| Video With Scenarios |Collisions WITH Obstacles | Video Without Scenarios |
