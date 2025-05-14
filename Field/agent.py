@@ -93,10 +93,8 @@ class Agent():
                 self.lock_timer = self.lock_duration
             else:
                 avoid_direction = -1 if self.avoidance_lock == "left" else 1
-
-            # Stronger avoidance, scaled inversely with distance
             avoid_magnitude = self.k_obstacle / max(dist, 0.1)
-            avoid_magnitude = min(avoid_magnitude, 15.0)  # Higher cap for sharper turns
+            avoid_magnitude = min(avoid_magnitude, 15.0) 
             force_x += avoid_magnitude * -forward_y * avoid_direction
             force_y += avoid_magnitude * forward_x * avoid_direction
 
@@ -113,7 +111,7 @@ class Agent():
             force_x /= force_magnitude
             force_y /= force_magnitude
             if closest_obstacle and dist < self.threshold_obstacle / 2:
-                lateral_shift = 10.0 * avoid_direction  # Increased to 10m for wider avoidance
+                lateral_shift = 10.0 * avoid_direction 
                 new_target_x = ego_x + force_x * self.large_distance + lateral_shift * -forward_y
                 new_target_y = ego_y + force_y * self.large_distance + lateral_shift * forward_x
             else:
@@ -141,8 +139,7 @@ class Agent():
         cross = ego_forward_x * wp_vector_y - ego_forward_y * wp_vector_x
         angle = math.atan2(cross, dot)
 
-        # Allow sharper turns by increasing the denominator
-        steering = max(min(angle / (math.pi / 3), 1.0), -1.0)  # 60 degrees max instead of 45
+        steering = max(min(angle / (math.pi / 3), 1.0), -1.0) 
         return steering
         
     def add_boundary_forces(self, ego_x, ego_y, boundary, force_x, force_y, is_left):
@@ -176,7 +173,6 @@ class Agent():
 
 
     def calculate_speed_control(self, ego_x, ego_y, ego_yaw, obstacles, current_speed, steering_angle, left_boundary, right_boundary, target_waypoint):
-        # Vehicle's forward vector
         ego_yaw_rad = math.radians(ego_yaw)
         forward_x = math.cos(ego_yaw_rad)
         forward_y = math.sin(ego_yaw_rad)
@@ -197,17 +193,6 @@ class Agent():
                 if cos_theta > math.cos(math.radians(30)):
                     min_dist_front = min(min_dist_front, dist)
         
-        #WAYPOINTS
-        # target_x, target_y = target_waypoint
-        # vec_x = target_x - ego_x
-        # vec_y = target_y - ego_y
-        # dist = math.hypot(vec_x, vec_y)
-        # dot = vec_x * forward_x + vec_y * forward_y
-        # if dist > 0 and dot > 0:
-        #     cos_theta = dot / dist
-        #     if cos_theta > math.cos(self.angle_threshold):
-        #         min_dist_front = min(min_dist_front, dist)
-        #BOUNDARY
         for i in range(len(left_boundary) - 1):  # Iterate through all consecutive boundary points
             s0_x = left_boundary[i].transform.location.x
             s0_y = left_boundary[i].transform.location.y
